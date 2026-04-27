@@ -1,157 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Practical 18</title>
-
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            margin:0;
-            background: linear-gradient(to right, #e08a8e, #e0aedc);
-        }
-
-        .header{
-            background:#dff35b;
-            color:rgb(110, 104, 241);
-            text-align:center;
-            padding:20px;
-        }
-
-        .content{
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            height:70vh;
-        }
-
-        .loginform{
-            background:rgb(14, 185, 100);
-            padding:25px;
-            border-radius:10px;
-            box-shadow:0 0 15px rgba(232, 248, 2, 0.2);
-            width:300px;
-        }
-
-        fieldset{
-            border:2px solid #97cce6;
-            border-radius:8px;
-        }
-
-        legend{
-            font-weight:bold;
-            color:#487b9d;
-        }
-
-        label{
-            display:block;
-            margin-bottom:5px;
-            font-weight:bold;
-        }
-
-        input[type="email"],
-        input[type="password"]{
-            width:100%;
-            padding:8px;
-            margin-bottom:10px;
-            border:1px solid #644343;
-            border-radius:5px;
-        }
-
-        input[type="submit"],
-        input[type="reset"]{
-            padding:8px 15px;
-            border:none;
-            border-radius:5px;
-            background:#4c687b;
-            color:white;
-            cursor:pointer;
-        }
-
-        input[type="reset"]{
-            background:#e9776b;
-        }
-
-        input:hover{
-            opacity:0.9;
-        }
-
-        a{
-            text-decoration:none;
-            color:#e4d8e3;
-        }
-
-        .footer{
-            text-align:center;
-            background:#e9e7e2;
-            color:rgb(110, 91, 216);
-            padding:10px;
-            position:fixed;
-            bottom:0;
-            width:100%;
-        }
-    </style>
-
-    <script>
-        function validation()
-        {
-            //Getting the user input
-            var emailID = document.getElementById("emailid").value;
-            var pwd = document.getElementById("password").value;
-
-            //Checking empty fields
-            if(emailID == "" || pwd == "")
-            {
-                alert("Please enter in the empty field.");
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }
-    </script>
-
+    <title>Practical 17</title>
+    <link rel="stylesheet" href="../CSS/practical17.css">
 </head>
 
 <body>
+    <h3>This is the Practical solution for Practical 17</h3>
 
-    <!-- Header Section -->
-    <div class="header">
-        <h2>Radhika Chuwan</h2>
-        <p>This is the practical solution for practical 18</p>
+    <div class="arithmetic">
+        This is where we will display the output
+
+        <script>
+            var num1, num2;
+            var result;
+
+            num1 = 200;
+            num2 = 89;
+
+            result = num1 + num2;
+            var sub = num1 - num2;
+
+            document.write("<br>The sum is: " + result);
+            document.write("<br>The difference is: " + sub);
+        </script>
     </div>
 
-    <!-- Main Content -->
-    <div class="content">
-        <div class="loginform">
-            <form onsubmit="return validation()">
-                <fieldset>
-                    <legend>Login Form</legend>
-
-                    <label for="emailid">Email ID</label>
-                    <input type="email" id="emailid" placeholder="Enter your email-id">
-
-                    <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Enter your password">
-
-                    <br><br>
-
-                    <input type="submit" value="Login">
-                    <input type="reset" value="Reset">
-
-                    <h4>
-                        Don't have an account?
-                        <a href="#">Register Here</a>
-                    </h4>
-
-                </fieldset>
-            </form>
-        </div>
+    <div>
+        <script>
+        </script>
     </div>
 
-    <!-- Footer Section -->
     <div class="footer">
-        <p>&copy; Radhika Chuwan</p>
+        &copy; Radhika Chuwan
     </div>
 
 </body>
