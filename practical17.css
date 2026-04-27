@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(250, 250, 138);
+    color: rgb(138, 48, 228);
+}
+.arithmetic{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(80, 231, 178);
+    border: 1px solid hsl(207, 83%, 45%);
+    margin: 10px 0;
+    padding: 10px;
+
+}
